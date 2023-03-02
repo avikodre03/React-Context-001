@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { GlobalData } from '../App'
 import './Header.css'
 import image from './image/image.jpg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -23,9 +24,18 @@ const Header = () => {
                 </div>
 
                 <div className="tab">
-                    <a href="Avi.com">Home</a>
-                    <a href="Avi.com">Contact</a>
-                    <a href="Avi.com">Service</a>
+                <ul>
+             <Link to="/Home">
+            <li>Home</li>
+             </Link >                              
+              <Link to="/Contact">
+            <li>Contact</li>
+              </Link>                 
+              <Link to="/Service">
+            <li>Service</li>
+              </Link>  
+        </ul>
+
                 </div>
 
                 <div className="toggleButton">

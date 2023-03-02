@@ -53,13 +53,23 @@
     align-items: center;
     justify-content: space-around;
 }
-
-.tab a {
-    font-size: 1.3rem;
-    color: black;
+.tab ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
 
-.tab a:hover {
+.tab ul li {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.tab li:hover {
     transform: scale(1.1);
     color: rgb(197, 194, 194);
 }
